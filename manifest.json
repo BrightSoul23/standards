@@ -1,1 +1,8 @@
+{
+  "short_name":"PDFPWA",
+  "name":"Simple PDF Reader PWA",
+  "start_url":".",
+  "display":"standalone",
+  "icons":[]
+}
 
