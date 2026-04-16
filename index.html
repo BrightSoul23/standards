@@ -1,1 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple PDF PWA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header><h1>My PDF Reader</h1></header>
+  <main>
+    <div id="controls">
+      <select id="pdfSelect">
+        <option value="DRIVE_PDF_URL_1">PDF 1</option>
+        <option value="DRIVE_PDF_URL_2">PDF 2</option>
+      </select>
+      <button id="loadBtn">Load PDF</button>
+      <input id="searchInput" placeholder="Search text" />
+      <button id="searchBtn">Search</button>
+      <input id="fromPage" type="number" min="1" placeholder="from" />
+      <input id="toPage" type="number" min="1" placeholder="to" />
+      <button id="readBtn">Read Pages</button>
+    </div>
+
+    <div id="viewer">
+      <canvas id="pdfCanvas"></canvas>
+      <div id="searchResults"></div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
 
