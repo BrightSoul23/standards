@@ -1,1 +1,7 @@
+body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;padding:0}
+header{background:#1a73e8;color:white;padding:12px;text-align:center}
+#controls{display:flex;flex-wrap:wrap;gap:8px;padding:10px}
+#viewer{padding:10px}
+#pdfCanvas{border:1px solid #ccc;max-width:100%}
+#searchResults{margin-top:8px;max-height:200px;overflow:auto;border-top:1px solid #eee;padding-top:6px}
 
